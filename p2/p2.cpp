@@ -16,10 +16,6 @@ int main()
 
     do
     {   c = a+b;
-        /*if (c%2==0)
-        {
-           sum = sum + c;
-        }*/
         sum = c%2==0?sum+c:sum;
         a=b;
         b=c;
