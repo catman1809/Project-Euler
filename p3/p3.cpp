@@ -19,10 +19,10 @@ int main()
     max = n/2==0?max+2:max;
     while (n%2==0)
     {   
-        //cout << "2" << endl;
         n/=2;
         //cout << n << endl;
     }
+
     //diving odd by primes
     for (long long int i=3; i<=sqrt(n); i=i+2)
     {   
@@ -35,6 +35,7 @@ int main()
 
         max = max<i?i:max;
     }
+
     //for leftover prime factors > sqrt(n)
     if (n>2)
     {
@@ -42,6 +43,7 @@ int main()
         //cout << n << endl;
         max = n;
     }
+    
     //for prime numbers
     if (n==no)
     {
